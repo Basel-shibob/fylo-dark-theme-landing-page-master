@@ -62,7 +62,7 @@ h2 {
     align-content: center;
     font-family: 'Open Sans', sans-serif;
     position: relative;
-    padding-bottom: 177px;
+    padding-bottom: 73px;
 }
 
 .intro__title {
@@ -107,7 +107,7 @@ h2 {
     width: 100%;
     position: absolute;
     z-index: 0;
-    top: 40rem;
+    bottom: 0;
 }
 
 .intro__curvy-mobile {
@@ -229,7 +229,7 @@ h2 {
 
 .protfiles--img {
     position: absolute;
-    left: 136px;
+    left: 5rem;
     top: 186px;
     height: 55px;
 }
@@ -254,14 +254,15 @@ h2 {
     display: flex;
     margin: 18px;
     margin-top: 17px;
-    margin-right: 180px;
+    margin-right: 116px;
     margin-bottom: 30px;
 }
 
 .protfile-dis {
     margin: 35px 0px 0px 26px;
-    width: 349px;
     padding: 7px 46px 18px 0px;
+    width: auto;
+    padding-right: 0;
 }
 
 .protfiles--form {
@@ -390,17 +391,18 @@ footer {
     font-size: 17px;
 }
 
-@media (min-width: 375px) and (max-width: 1023px) {
+@media (min-width: 320px) and (max-width: 1023px) {
     .nav--bar {
         display: flex;
+        flex-direction: column;
     }
     .nav--bar svg {
         margin: 0px;
         margin-left: 25px;
     }
     .navigationbar {
-        width: 51%;
-        margin-right: 11px;
+        width: 59%;
+        margin-right: 0;
     }
     /* intro */
     .intro {
@@ -429,7 +431,7 @@ footer {
         width: 100%;
         position: absolute;
         z-index: 0;
-        top: 17rem;
+        bottom: 0;
         overflow: hidden;
         height: 34rem;
     }
@@ -479,23 +481,24 @@ footer {
     .protfiles--module {
         display: flex;
         flex-direction: column;
-        margin: auto;
+        margin: 0;
         padding-bottom: 10rem;
+        align-items: center;
     }
     .protfiles--img {
         position: absolute;
-        left: auto;
         top: 15.5rem;
         height: auto;
     }
     .protfile-1 {
-        width: 107%;
+        width: 85%;
         margin-right: 0;
         margin-top: 3rem;
     }
     .protfile-dis {
         padding: 0;
         margin-bottom: 26px;
+        width: auto;
     }
     .protfiles--form {
         width: 80%;
@@ -542,5 +545,136 @@ footer {
     .Footer__links-social {
         display: flex;
         justify-content: center;
+    }
+}
+
+body {
+    background-color: hsl(176, 68%, 64%);
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+    .intro {
+        padding-bottom: 17rem;
+    }
+    .stay-productive {
+        padding-left: 7rem;
+    }
+    .protfile-1 {
+        width: 28%;
+        margin-right: 2rem;
+    }
+    .protfiles--img {
+        left: 4rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .intro {
+        padding-bottom: 37rem;
+        padding-top: 13rem;
+    }
+    .components {
+        display: flex;
+        justify-content: center;
+    }
+    .stay-productive {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 128px;
+        padding-left: 25rem;
+    }
+    .protfiles--img {
+        left: 60rem;
+    }
+    .protfile-1 {
+        width: 15%;
+        padding: 1rem;
+    }
+    .protfile-dis {
+        margin: 35px 0px 0px 26px;
+        width: 452px;
+        font-size: large;
+        padding: 7px 46px 18px 0px;
+    }
+    .protfile {
+        margin-top: 36px;
+        margin-bottom: 17px;
+    }
+    .protfiles--form {
+        font-size: x-large;
+        width: 36%;
+    }
+    .protfiles--form h2 {
+        font-size: xxx-large;
+    }
+    .email-sinUp {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px 3rem;
+    }
+    .email-form {
+        height: -1px;
+    }
+    .submit-Btn {
+        height: 71px;
+        font-size: x-large;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        width: 100%;
+    }
+    .footer__img {
+        margin: 117px 0px 0px 136px;
+    }
+}
+
+@media (max-width: 768) {
+    .intro {
+        padding-bottom: 1.5rem;
+    }
+    .stay-productive {
+        padding-left: 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .stay__productive_discroption {
+        display: flex;
+        flex-direction: column;
+        padding-left: 55px;
+    }
+    .protfiles--module {
+        overflow: hidden;
+        width: 100%;
+    }
+    .protfile-1 {
+        width: auto;
+        margin-right: 2rem;
+    }
+    .protfile-dis {
+        margin: 35px 0px 0px 26px;
+        width: 299px;
+        padding: 7px 0px 18px 0px;
+    }
+    .protfile {
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767) {
+    .protfiles--module {
+        display: flex;
+        align-items: center;
+    }
+    .protfile-1 {
+        width: 48%;
+    }
+    .protfiles--img {
+        left: 13rem;
     }
 }
